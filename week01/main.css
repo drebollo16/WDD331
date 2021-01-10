@@ -1,0 +1,161 @@
+/*Small view*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+body {
+    background-color: #FAEBD7;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+nav {
+    padding-right: 20px;
+}
+
+hr {
+    width: 80%;
+}
+
+h2 a {
+    color: black;
+    font-size: 27px;
+}
+
+header a {
+    color: #FAEBD7;
+}
+
+header {
+    background-color: #6495ED;
+    text-align: right;
+    color: #FAEBD7;
+}
+
+h1 {
+    color: #faebd7;
+    padding-top: 20px;
+    margin-right: 10px;
+    font-family: lora;
+}
+
+ul>li {
+    margin-bottom: 10px;
+}
+
+li>a {
+    font-size: large;
+    font-family: lora;
+    color: #FAEBD7;
+}
+
+a:link {
+    text-decoration: none;
+    font-family: lora;
+    color: #DEB887;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #DEB887;
+}
+
+img {
+    width: 60%;
+}
+
+article {
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+h2 :active {
+    color: #DEB887;
+}
+
+h2 :hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+ul>li {
+    display: block;
+}
+
+.post-date {
+    padding: 10px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 17px;
+    color: rgb(133, 130, 130);
+}
+
+
+/*Large view*/
+
+@media only screen and (min-width:60em) {
+    main {
+        margin: 0 auto;
+        width: 62%;
+    }
+    header,
+    footer {
+        position: fixed;
+        height: 100%;
+        width: 20%;
+    }
+    article {
+        background-color: white;
+        margin-top: 40px;
+        margin-left: 40px;
+        text-align: center;
+        padding: 10px;
+    }
+    header a,
+    nav {
+        color: #faebd7;
+    }
+    hr {
+        margin: 3px;
+        width: 80%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    li>a {
+        padding-right: 0;
+        font-size: 25px;
+        color: #FAEBD7;
+    }
+    .post-date {
+        padding: 10px;
+        margin-left: 10px;
+        text-align: left;
+    }
+    img {
+        width: 40%;
+    }
+    h1 {
+        font-family: lora;
+        color: #FAEBD7;
+        text-align: right;
+        margin-left: 70px;
+        padding-right: 20px;
+    }
+    h2 {
+        text-align: left;
+        margin-left: 50px;
+        font-family: lora;
+        color: black;
+    }
+}
