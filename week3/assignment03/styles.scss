@@ -11,6 +11,10 @@ $active-color:#DEB887;
 $font-family-style:Helvetica,
 Arial,
 sans-serif;
+$font-style:lora;
+$hr-width:80%;
+$text-left-align:left;
+$text-center-align:center;
 //heading Variables
 $h1FontSize:24px;
 //set breakpoint sizes
@@ -45,10 +49,11 @@ header {
         color: $header-color;
         padding-top: 20px;
         margin-right: 10px;
-        font-family: lora;
+        font-family: $font-style;
+        //large view for h1 
         @media ($feature-size: $break-large) {
             & {
-                font-family: lora;
+                font-family: $font-style;
                 color: $body-background-color;
             }
         }
@@ -65,11 +70,11 @@ header {
         text-decoration: none;
     }
     hr {
-        width: 80%;
+        width: $hr-width;
         @media ($feature-size: $break-large) {
             & {
                 margin: 3px;
-                width: 80%;
+                width: $hr-width;
                 margin-left: 20px;
                 margin-right: 20px;
             }
@@ -88,7 +93,7 @@ nav {
             display: block;
             a {
                 font-size: large;
-                font-family: lora;
+                font-family: $font-style;
                 color: $article-background-color;
                 text-decoration: none;
             }
@@ -115,7 +120,7 @@ h2 {
     }
      :link {
         text-decoration: none;
-        font-family: lora;
+        font-family: $font-style;
     }
      :hover {
         color: $header-background-color;
@@ -123,9 +128,9 @@ h2 {
     }
     @media (min-width: $break-large) {
         & {
-            text-align: left;
+            text-align: $text-left-align;
             margin-left: 50px;
-            font-family: lora;
+            font-family: $font-style;
             color: $color-regular;
         }
     }
@@ -142,14 +147,14 @@ img {
 
 @mixin article-text {
     background-color: $article-background-color;
-    text-align: center;
+    text-align: $text-center-align;
     padding: 10px;
     box-shadow: rgb(173, 172, 172) 3px 3px 3px;
     color: $color-regular;
 }
 
 @mixin postmix {
-    text-align: left;
+    text-align: $text-left-align;
     padding: 10px;
     margin-left: 10px;
 }
@@ -157,7 +162,7 @@ img {
 article {
     margin-left: 10px;
     margin-top: 30px;
-    text-align: center;
+    text-align: $text-center-align;
     @include article-text;
     @media (min-width: $break-large) {
         & {
