@@ -1,0 +1,202 @@
+/*Small view*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+//colors Variables
+$body-background-color:#FAEBD7;
+$article-background-color: white;
+$header-background-color:#6495ED;
+$header-color:#faebd7;
+$color-regular: black;
+$active-color:#DEB887;
+$font-family-style:Helvetica,
+Arial,
+sans-serif;
+//heading Variables
+$h1FontSize:24px;
+//set breakpoint sizes
+$break-large: 60em;
+//large breakpoint
+$feature-size:min-width;
+$value:60em;
+body {
+    background-color: $body-background-color;
+    font-family: $font-family-style;
+}
+
+main {
+    font-size: 16px;
+    padding-top: 0.1px;
+    font-family: $font-family-style;
+    //breaks to large view
+    @media ($feature-size: $break-large) {
+        & {
+            margin: 0 auto;
+            width: 62%;
+        }
+    }
+}
+
+//header nesting with psuedo classes
+header {
+    background-color: $header-background-color;
+    text-align: right;
+    color: $header-color;
+    h1 {
+        color: $header-color;
+        padding-top: 20px;
+        margin-right: 10px;
+        font-family: lora;
+        @media ($feature-size: $break-large) {
+            & {
+                font-family: lora;
+                color: $body-background-color;
+            }
+        }
+    }
+     :hover {
+        color: $article-background-color;
+        text-decoration: underline;
+    }
+     :active {
+        color: $active-color;
+    }
+    a {
+        color: $header-color;
+        text-decoration: none;
+    }
+    hr {
+        width: 80%;
+        @media ($feature-size: $break-large) {
+            & {
+                margin: 3px;
+                width: 80%;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+//header nav
+nav {
+    padding-right: 20px;
+    padding-bottom: 30px;
+    //a href links for the nav
+    ul {
+        li {
+            margin-bottom: 10px;
+            display: block;
+            a {
+                font-size: large;
+                font-family: lora;
+                color: $article-background-color;
+                text-decoration: none;
+            }
+             :hover {
+                color: $article-background-color;
+                text-decoration: underline;
+            }
+             :active {
+                color: $active-color;
+            }
+        }
+    }
+}
+
+//h2 nested links
+h2 {
+    a {
+        color: $color-regular;
+        font-size: 27px;
+        text-decoration: none;
+    }
+     :active {
+        color: $header-color;
+    }
+     :link {
+        text-decoration: none;
+        font-family: lora;
+    }
+     :hover {
+        color: $header-background-color;
+        text-decoration: underline;
+    }
+    @media (min-width: $break-large) {
+        & {
+            text-align: left;
+            margin-left: 50px;
+            font-family: lora;
+            color: $color-regular;
+        }
+    }
+}
+
+img {
+    width: 60%;
+    @media (min-width: $break-large) {
+        & {
+            width: 40%;
+        }
+    }
+}
+
+@mixin article-text {
+    background-color: $article-background-color;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgb(173, 172, 172) 3px 3px 3px;
+    color: $color-regular;
+}
+
+@mixin postmix {
+    text-align: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+article {
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: center;
+    @include article-text;
+    @media (min-width: $break-large) {
+        & {
+            @include article-text;
+            margin-top: 60px;
+            margin-left: 80px;
+            padding: 10px;
+            width: 70%;
+        }
+    }
+}
+
+.post-date {
+    @include postmix;
+    font-size: 17px;
+    color: rgb(133, 130, 130);
+    @media (min-width: $break-large) {
+        & {
+            @include postmix;
+        }
+    }
+}
+
+
+/*Large view*/
+
+@media only screen and ($feature-size:$break-large) {
+    header,
+    footer {
+        position: fixed;
+        height: 100%;
+        width: 20%;
+    }
+    li>a {
+        padding-right: 0;
+        font-size: 25px;
+        color: $body-background-color;
+    }
+}
+
+
+/*# sourceMappingURL=styles.scss.map */

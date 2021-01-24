@@ -1,0 +1,172 @@
+/*Small view*/
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+body {
+  background-color: #FAEBD7;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  font-size: 16px;
+  padding-top: 0.1px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+@media (min-width: 60em) {
+  main {
+    margin: 0 auto;
+    width: 62%;
+  }
+}
+
+header {
+  background-color: #6495ED;
+  text-align: right;
+  color: #faebd7;
+}
+header h1 {
+  color: #faebd7;
+  padding-top: 20px;
+  margin-right: 10px;
+  font-family: lora;
+}
+@media (min-width: 60em) {
+  header h1 {
+    font-family: lora;
+    color: #FAEBD7;
+  }
+}
+header :hover {
+  color: white;
+  text-decoration: underline;
+}
+header :active {
+  color: #DEB887;
+}
+header a {
+  color: #faebd7;
+  text-decoration: none;
+}
+header hr {
+  width: 80%;
+}
+@media (min-width: 60em) {
+  header hr {
+    margin: 3px;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+nav {
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+nav ul li {
+  margin-bottom: 10px;
+  display: block;
+}
+nav ul li a {
+  font-size: large;
+  font-family: lora;
+  color: white;
+  text-decoration: none;
+}
+nav ul li :hover {
+  color: white;
+  text-decoration: underline;
+}
+nav ul li :active {
+  color: #DEB887;
+}
+
+h2 a {
+  color: black;
+  font-size: 27px;
+  text-decoration: none;
+}
+h2 :active {
+  color: #faebd7;
+}
+h2 :link {
+  text-decoration: none;
+  font-family: lora;
+}
+h2 :hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+@media (min-width: 60em) {
+  h2 {
+    text-align: left;
+    margin-left: 50px;
+    font-family: lora;
+    color: black;
+  }
+}
+
+img {
+  width: 60%;
+}
+@media (min-width: 60em) {
+  img {
+    width: 40%;
+  }
+}
+
+article {
+  margin-left: 10px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: #adacac 3px 3px 3px;
+  color: black;
+}
+@media (min-width: 60em) {
+  article {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #adacac 3px 3px 3px;
+    color: black;
+    margin-top: 60px;
+    margin-left: 80px;
+    padding: 10px;
+    width: 70%;
+  }
+}
+
+.post-date {
+  text-align: left;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 17px;
+  color: #858282;
+}
+@media (min-width: 60em) {
+  .post-date {
+    text-align: left;
+    padding: 10px;
+    margin-left: 10px;
+  }
+}
+
+/*Large view*/
+@media only screen and (min-width: 60em) {
+  header,
+footer {
+    position: fixed;
+    height: 100%;
+    width: 20%;
+  }
+
+  li > a {
+    padding-right: 0;
+    font-size: 25px;
+    color: #FAEBD7;
+  }
+}
+/*# sourceMappingURL=styles.scss.map */
+
+/*# sourceMappingURL=styles.css.map */

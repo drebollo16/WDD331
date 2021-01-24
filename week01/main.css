@@ -47,6 +47,10 @@ ul>li {
     margin-bottom: 10px;
 }
 
+ul>li {
+    display: block;
+}
+
 li>a {
     font-size: large;
     font-family: lora;
@@ -88,10 +92,6 @@ h2 :active {
 h2 :hover {
     color: #6495ED;
     text-decoration: underline;
-}
-
-ul>li {
-    display: block;
 }
 
 .post-date {
