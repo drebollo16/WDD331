@@ -1,6 +1,5 @@
 @import 'typography';
 @import 'icons';
-
 $sm-break: 48em;
 // colors
 $dark-gray: #727272;
@@ -9,25 +8,55 @@ $light-gray: #eaeaea;
 $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
-
 // Utility classes
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+table,
+td {
+    height: 35px;
+    border: 1px solid black;
+    width: 200px;
+    border-collapse: collapse;
+}
+
+td {
+    color: rgb(72, 103, 160);
+}
+
+th {
+    height: 45px;
+    background-color: #808380;
+    color: white;
+    text-size-adjust: 35px;
+}
+
+tr:hover {
+    background-color: rgb(188, 202, 212);
 }
