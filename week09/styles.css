@@ -1031,4 +1031,33 @@ img {
   border: 0;
 }
 
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+table,
+td {
+  height: 35px;
+  border: 1px solid black;
+  width: 200px;
+  border-collapse: collapse;
+}
+
+td {
+  color: #4867a0;
+}
+
+th {
+  height: 45px;
+  background-color: #808380;
+  color: white;
+  text-size-adjust: 35px;
+}
+
+tr:hover {
+  background-color: #bccad4;
+}
+
 /*# sourceMappingURL=styles.css.map */
