@@ -1008,56 +1008,94 @@
   content: "";
 }
 
-*,
+@media only screen and (min-width: 70rem) {
+  *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-img {
-  max-width: 100%;
-}
+  h1 {
+    background-color: #eaeaea;
+    height: 100px;
+    font-family: "BYUI Open Sans";
+    line-height: 4;
+    font-style: normal;
+    font-weight: 300;
+    padding-left: 35px;
+  }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
+  img {
+    max-width: 80%;
+    margin-top: 30px;
+    padding: 30px;
+  }
 
-.grid-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(6, 1fr);
-}
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
 
-table,
+  .grid-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  table,
 td {
-  height: 35px;
-  border: 1px solid black;
-  width: 200px;
-  border-collapse: collapse;
-}
+    height: 35px;
+    border: 1px solid black;
+    width: 200px;
+    border-collapse: collapse;
+    display: block;
+  }
 
-td {
-  color: #4867a0;
-}
+  table {
+    display: block;
+    grid-column: 2/span 2;
+  }
 
-th {
-  height: 45px;
-  background-color: #808380;
-  color: white;
-  text-size-adjust: 35px;
-}
+  td {
+    color: #0076b6;
+    padding-left: 15px;
+  }
 
-tr:hover {
-  background-color: #bccad4;
+  th {
+    height: 45px;
+    background-color: #727272;
+    color: white;
+    text-size-adjust: 35px;
+  }
+
+  tr:hover {
+    background-color: #eaeaea;
+  }
+
+  .tableDates {
+    margin-top: 35px;
+  }
+  .tableDates th {
+    background-color: #056cb6;
+  }
+}
+@media only screen and (min-width: 30rem) {
+  .grid-content {
+    display: grid;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 35px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

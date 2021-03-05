@@ -1,62 +1,91 @@
 @import 'typography';
 @import 'icons';
-$sm-break: 48em;
-// colors
-$dark-gray: #727272;
-$med-gray: #b4b3b5;
-$light-gray: #eaeaea;
-$body-font: #020202;
-$link-blue: #0076b6; //why do we have both of these blues?
-$byui-blue: #056cb6;
-// Utility classes
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+@media only screen and (min-width:70rem) {
+    $sm-break: 48em;
+    // colors
+    $dark-gray: #727272;
+    $med-gray: #b4b3b5;
+    $light-gray: #eaeaea;
+    $body-font: #020202;
+    $link-blue: #0076b6; //why do we have both of these blues?
+    $byui-blue: #056cb6;
+    // Utility classes
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    h1 {
+        background-color: $light-gray;
+        height: 100px;
+        font-family: 'BYUI Open Sans';
+        line-height: 4;
+        font-style: normal;
+        font-weight: 300;
+        padding-left: 35px;
+    }
+    img {
+        max-width: 80%;
+        margin-top: 30px;
+        padding: 30px;
+    }
+    //images
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+    .grid-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    table,
+    td {
+        height: 35px;
+        border: 1px solid black;
+        width: 200px;
+        border-collapse: collapse;
+        display: block;
+    }
+    table {
+        display: block;
+        grid-column: 2/ span 2;
+    }
+    td {
+        color: $link-blue;
+        padding-left: 15px;
+    }
+    th {
+        height: 45px;
+        background-color: $dark-gray;
+        color: white;
+        text-size-adjust: 35px;
+    }
+    tr:hover {
+        background-color: $light-gray;
+    }
+    .tableDates {
+        margin-top: 35px;
+        th {
+            background-color: $byui-blue;
+        }
+    }
 }
 
-img {
-    max-width: 100%;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-.grid-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-}
-
-table,
-td {
-    height: 35px;
-    border: 1px solid black;
-    width: 200px;
-    border-collapse: collapse;
-}
-
-td {
-    color: rgb(72, 103, 160);
-}
-
-th {
-    height: 45px;
-    background-color: #808380;
-    color: white;
-    text-size-adjust: 35px;
-}
-
-tr:hover {
-    background-color: rgb(188, 202, 212);
+@media only screen and (min-width:30rem) {
+    .grid-content {
+        display: grid;
+    }
+    img {
+        width: 100%;
+        margin-top: 35px;
+    }
 }
