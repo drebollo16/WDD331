@@ -1078,8 +1078,8 @@
     font-size: 40px;
   }
 
-  .site-banner__right:hover {
-    color: #000;
+  a:link {
+    text-decoration: none;
   }
 
   span.icon-byui-logo {
@@ -1100,6 +1100,7 @@
 .icon-menu {
     color: white;
     margin-left: 5px;
+    text-decoration: none;
   }
 }
 @media only screen and (min-width: 60rem) {
@@ -1218,17 +1219,14 @@
 
   .campusvideo {
     grid-column: 1;
-    width: 100%;
   }
 
   .photogallery {
     grid-column: 2;
-    width: 100%;
   }
 
   .explorecampus {
     grid-column: 3;
-    width: 100%;
   }
 
   .sr-only {

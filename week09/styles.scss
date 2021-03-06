@@ -71,8 +71,8 @@ $byui-blue: #056cb6;
         padding-left: 15px;
         font-size: 40px;
     }
-    .site-banner__right:hover {
-        color: #000;
+    a:link {
+        text-decoration: none;
     }
     span.icon-byui-logo {
         background-color: black;
@@ -91,6 +91,7 @@ $byui-blue: #056cb6;
     .icon-menu {
         color: white;
         margin-left: 5px;
+        text-decoration: none;
     }
 }
 
@@ -196,15 +197,12 @@ $byui-blue: #056cb6;
     }
     .campusvideo {
         grid-column: 1;
-        width: 100%;
     }
     .photogallery {
         grid-column: 2;
-        width: 100%;
     }
     .explorecampus {
         grid-column: 3;
-        width: 100%;
     }
     //images
     .sr-only {
