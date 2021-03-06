@@ -1120,6 +1120,8 @@
 
   body {
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
     height: 100%;
   }
 
@@ -1202,7 +1204,7 @@
     background-color: #eaeaea;
     border-radius: 5px;
     height: 45px;
-    width: 300px;
+    width: 320px;
   }
 
   .firstbox {
@@ -1303,7 +1305,7 @@
     border: 1px solid black;
     border-collapse: collapse;
     display: block;
-    width: 250px;
+    width: 320px;
     color: #0076b6;
     padding-left: 15px;
     font-size: 18px;
@@ -1333,7 +1335,7 @@
   .tableDates {
     margin-top: 35px;
     height: 55px;
-    width: 40%;
+    width: 320px;
   }
   .tableDates th {
     background-color: #056cb6;
@@ -1345,7 +1347,7 @@
   .tableDates td {
     height: 50px;
     border-collapse: collapse;
-    width: 250px;
+    width: 320px;
   }
 }
 
