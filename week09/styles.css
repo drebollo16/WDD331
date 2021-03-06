@@ -1175,10 +1175,17 @@
   h3 {
     color: #056cb6;
     font-family: "BYUI Open Sans";
-    line-height: 4;
     font-style: normal;
-    font-weight: 400;
     margin-bottom: 0px;
+  }
+
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  p {
+    margin-top: 0px;
   }
 
   img {
@@ -1230,6 +1237,11 @@
     grid-gap: 15px;
   }
 
+  .campus {
+    color: #0076b6;
+    text-align: center;
+  }
+
   .campusvideo {
     grid-column: 1;
   }
@@ -1259,7 +1271,7 @@
   .devsect {
     grid-column: 3;
     grid-row: 3;
-    width: 80%;
+    width: 100%;
     padding-left: 40px;
   }
 
@@ -1270,6 +1282,7 @@
   }
   .classsec .text1 {
     grid-column: 2/span 2;
+    margin-top: 16px;
   }
 
   .teachersec {
@@ -1279,6 +1292,7 @@
   }
   .teachersec .text2 {
     grid-column: 2/span 2;
+    margin-top: 16px;
   }
 
   .adsection {
@@ -1287,6 +1301,7 @@
   }
   .adsection .text3 {
     grid-column: 2/span 2;
+    margin-top: 16px;
   }
 
   .sr-only {

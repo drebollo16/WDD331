@@ -159,10 +159,15 @@ $byui-blue: #056cb6;
     h3 {
         color: $byui-blue;
         font-family: 'BYUI Open Sans';
-        line-height: 4;
         font-style: normal;
-        font-weight: 400;
         margin-bottom: 0px;
+    }
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    p {
+        margin-top: 0px;
     }
     img {
         margin-top: 30px;
@@ -207,6 +212,11 @@ $byui-blue: #056cb6;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 15px
     }
+    //h4 for grid image text on images
+    .campus {
+        color: $link-blue;
+        text-align: center;
+    }
     .campusvideo {
         grid-column: 1;
     }
@@ -232,7 +242,7 @@ $byui-blue: #056cb6;
     .devsect {
         grid-column: 3;
         grid-row: 3;
-        width: 80%;
+        width: 100%;
         padding-left: 40px;
     }
     //section 3 newsfeed
@@ -242,6 +252,7 @@ $byui-blue: #056cb6;
         grid-template-columns: 1fr 1fr 1fr;
         .text1 {
             grid-column: 2/ span 2;
+            margin-top: 16px;
         }
     }
     .teachersec {
@@ -250,6 +261,7 @@ $byui-blue: #056cb6;
         grid-template-columns: 1fr 1fr 1fr;
         .text2 {
             grid-column: 2/ span 2;
+            margin-top: 16px;
         }
     }
     .adsection {
@@ -257,6 +269,7 @@ $byui-blue: #056cb6;
         grid-template-columns: 1fr 1fr 1fr;
         .text3 {
             grid-column: 2/ span 2;
+            margin-top: 16px;
         }
     }
     //images
