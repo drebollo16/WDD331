@@ -1016,154 +1016,7 @@
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 60rem) {
-  header {
-    width: 100%;
-  }
-
-  .site-banner-white-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #056cb6;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .site-banner__left {
-    position: absolute;
-    width: 180px;
-    grid-column: 1;
-  }
-
-  .site-banner__right {
-    grid-column: 2;
-    font-size: 45px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  span.icon-byui-logo {
-    background-color: black;
-    color: white;
-    height: 80px;
-    font-size: 45px;
-    text-align: center;
-    padding-top: 15px;
-    margin-left: 30px;
-    width: 80px;
-    position: absolute;
-  }
-
-  form {
-    grid-column: 3;
-    height: 30px;
-  }
-
-  h1 {
-    background-color: #eaeaea;
-    height: 100px;
-    font-family: "BYUI Open Sans";
-    line-height: 4;
-    font-style: normal;
-    font-weight: 300;
-    padding-left: 35px;
-  }
-
-  img {
-    max-width: 80%;
-    margin-top: 30px;
-    padding: 30px;
-  }
-
-  .covidbanner {
-    grid-column: 1 span 2;
-  }
-
-  .greenimg {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  .grid-img {
-    grid-row: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-  }
-
-  .campusvideo {
-    grid-column: 1;
-    width: 100%;
-  }
-
-  .photogallery {
-    grid-column: 2;
-  }
-
-  .explorecampus {
-    grid-column: 3;
-  }
-
-  .sr-only {
-    position: absolute;
-    width: 10px;
-    height: 15px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-
-  .grid-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  table,
-td {
-    height: 35px;
-    border: 1px solid black;
-    width: 200px;
-    border-collapse: collapse;
-    display: block;
-  }
-
-  .table-resource {
-    display: block;
-    grid-column: 2/span 2;
-    text-align: center;
-    margin-left: 50px;
-    margin-top: 30px;
-  }
-
-  td {
-    color: #0076b6;
-    padding-left: 15px;
-  }
-
-  th {
-    height: 45px;
-    background-color: #727272;
-    color: white;
-    text-size-adjust: 35px;
-  }
-
-  tr:hover {
-    background-color: #eaeaea;
-  }
-
-  .tableDates {
-    margin-top: 35px;
-    margin-left: 50px;
-  }
-  .tableDates th {
-    background-color: #056cb6;
-  }
-}
-@media only screen and (min-width: 10em) {
+@media only screen and (min-width: 10rem) {
   .grid-content {
     display: grid;
   }
@@ -1178,15 +1031,21 @@ td {
     height: 80px;
   }
 
+  form {
+    grid-column: 3;
+    height: 30px;
+    display: none;
+  }
+
   h1 {
     background-color: #eaeaea;
-    height: 100px;
     font-family: "BYUI Open Sans";
     line-height: 4;
     font-style: normal;
     font-weight: 300;
-    padding-left: 35px;
+    padding-left: 20px;
     padding-top: 1px;
+    font-size: 20px;
     display: flex;
     text-align: center;
   }
@@ -1213,8 +1072,14 @@ td {
     text-align: center;
     text-decoration: none;
     position: relative;
+    margin-top: 15px;
+    text-decoration: none;
+    padding-left: 15px;
     font-size: 40px;
-    color: whitesmoke;
+  }
+
+  .site-banner__right:hover {
+    color: #000;
   }
 
   span.icon-byui-logo {
@@ -1224,10 +1089,206 @@ td {
     font-size: 40px;
     text-align: center;
     padding-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     padding: 20px;
     width: 100px;
     position: absolute;
+  }
+
+  .icon-search,
+.icon-audience,
+.icon-menu {
+    color: white;
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-width: 60rem) {
+  header {
+    width: 100%;
+    margin: 0px;
+  }
+
+  main {
+    font-family: "BYUI Open Sans";
+    font-style: normal;
+    width: 1200px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 0;
+  }
+
+  body {
+    margin-top: 0;
+  }
+
+  .site-banner-white-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #056cb6;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .site-banner__left {
+    position: absolute;
+    width: 180px;
+    grid-column: 1;
+  }
+
+  .site-banner__right {
+    grid-column: 2;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  span.icon-byui-logo {
+    background-color: black;
+    color: white;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 250px;
+    width: 100px;
+    position: absolute;
+  }
+
+  h1 {
+    background-color: #eaeaea;
+    height: 100px;
+    font-family: "BYUI Open Sans";
+    line-height: 4;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    padding-left: 250px;
+    margin: 0px;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+
+  .grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .covidbanner {
+    grid-column: 1 span 2;
+    width: 100%;
+  }
+
+  select {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 20px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    height: 45px;
+    width: 300px;
+  }
+
+  .firstbox {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .greenimg {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .grid-img {
+    grid-row: 2;
+    grid-column: 1/span 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .campusvideo {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .photogallery {
+    grid-column: 2;
+    width: 100%;
+  }
+
+  .explorecampus {
+    grid-column: 3;
+    width: 100%;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  td {
+    height: 35px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: block;
+    width: 250px;
+    color: #0076b6;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+
+  .table-resource {
+    display: block;
+    grid-column: 3;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
+  th {
+    height: 45px;
+    background-color: #727272;
+    color: white;
+    font-size: 22px;
+    font-family: "BYUI Open Sans";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  tr:hover {
+    background-color: #eaeaea;
+  }
+
+  .tableDates {
+    margin-top: 35px;
+    height: 55px;
+    width: 40%;
+  }
+  .tableDates th {
+    background-color: #056cb6;
+    font-size: 22px;
+    font-family: "BYUI Open Sans";
+    font-style: normal;
+    font-weight: 400;
+  }
+  .tableDates td {
+    height: 50px;
+    width: 250px;
   }
 }
 
