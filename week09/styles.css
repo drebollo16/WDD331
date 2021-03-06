@@ -1016,7 +1016,7 @@
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 10rem) {
+@media only screen and (min-width: 20rem) {
   .grid-content {
     display: grid;
   }
@@ -1048,6 +1048,13 @@
     font-size: 20px;
     display: flex;
     text-align: center;
+  }
+
+  h3 {
+    color: #056cb6;
+    font-family: "BYUI Open Sans";
+    font-style: normal;
+    margin-bottom: 0px;
   }
 
   .site-banner-white-text {
@@ -1102,6 +1109,117 @@
     margin-left: 5px;
     text-decoration: none;
   }
+
+  .campus {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: #b4b3b5;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    color: #0076b6;
+  }
+
+  td {
+    height: 35px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    color: #0076b6;
+    padding-left: 5px;
+    font-size: 18px;
+  }
+
+  .table-resource {
+    display: block;
+    margin-left: 5px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th {
+    height: 45px;
+    background-color: #727272;
+    color: white;
+    font-size: 22px;
+    font-family: "BYUI Open Sans";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  tr:hover {
+    background-color: #eaeaea;
+  }
+
+  select {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 18px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    height: 45px;
+    width: 80%;
+  }
+
+  .tableDates {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    height: 40px;
+    width: 100%;
+  }
+  .tableDates th {
+    background-color: #056cb6;
+    font-size: 18px;
+    font-family: "BYUI Open Sans";
+    font-style: normal;
+    font-weight: 400;
+  }
+  .tableDates td {
+    height: 40px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .newfeed-grid {
+    margin-top: 35px;
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .newfeed-grid img {
+    display: none;
+  }
+
+  .classsec {
+    border-top: 1px solid #d4d2d2;
+  }
+  .classsec .text1 {
+    grid-column: 2/span 2;
+    margin-top: 16px;
+  }
+
+  .teachersec {
+    border-top: 1px solid #d4d2d2;
+  }
+  .teachersec .text2 {
+    margin-top: 16px;
+  }
+
+  .adsection {
+    border-top: 1px solid #d4d2d2;
+  }
+  .adsection .text3 {
+    margin-top: 16px;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header {
@@ -1113,7 +1231,7 @@
     font-family: "BYUI Open Sans";
     font-style: normal;
     width: 1200px;
-    margin-left: 250px;
+    margin-left: 450px;
     margin-right: 250px;
     margin-top: 0;
   }
@@ -1136,7 +1254,7 @@
 
   .site-banner__left {
     position: absolute;
-    width: 180px;
+    width: 280px;
     grid-column: 1;
   }
 
@@ -1155,7 +1273,7 @@
     font-size: 40px;
     text-align: center;
     padding-top: 15px;
-    margin-left: 250px;
+    margin-left: 450px;
     width: 100px;
     position: absolute;
   }
@@ -1168,7 +1286,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
-    padding-left: 250px;
+    padding-left: 450px;
     margin: 0px;
   }
 
@@ -1182,6 +1300,7 @@
   h4 {
     margin-top: 10px;
     margin-bottom: 2px;
+    color: #0076b6;
   }
 
   p {
@@ -1238,8 +1357,10 @@
   }
 
   .campus {
-    color: #0076b6;
     text-align: center;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: #b4b3b5;
   }
 
   .campusvideo {
@@ -1260,12 +1381,13 @@
     grid-column: 1/span 2;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 200px;
   }
   .newfeed-grid img {
+    display: block;
     margin-left: 5px;
     height: 150px;
     width: 90%;
+    padding-bottom: 8px;
   }
 
   .devsect {
@@ -1276,6 +1398,7 @@
   }
 
   .classsec {
+    border-top: 1px solid #d4d2d2;
     grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1286,6 +1409,7 @@
   }
 
   .teachersec {
+    border-top: 1px solid #d4d2d2;
     grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1296,6 +1420,7 @@
   }
 
   .adsection {
+    border-top: 1px solid #d4d2d2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1320,7 +1445,6 @@
     border: 1px solid black;
     border-collapse: collapse;
     display: block;
-    width: 320px;
     color: #0076b6;
     padding-left: 15px;
     font-size: 18px;
@@ -1331,6 +1455,7 @@
     grid-column: 3;
     margin-left: 50px;
     margin-top: 30px;
+    width: 320px;
   }
 
   th {
@@ -1350,7 +1475,6 @@
   .tableDates {
     margin-top: 35px;
     height: 55px;
-    width: 320px;
   }
   .tableDates th {
     background-color: #056cb6;
@@ -1362,7 +1486,6 @@
   .tableDates td {
     height: 50px;
     border-collapse: collapse;
-    width: 320px;
   }
 }
 

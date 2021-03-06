@@ -17,7 +17,7 @@ $byui-blue: #056cb6;
     box-sizing: border-box;
 }
 
-@media only screen and (min-width:10rem) {
+@media only screen and (min-width:20rem) {
     .grid-content {
         display: grid;
     }
@@ -45,6 +45,12 @@ $byui-blue: #056cb6;
         font-size: 20px;
         display: flex;
         text-align: center;
+    }
+    h3 {
+        color: $byui-blue;
+        font-family: 'BYUI Open Sans';
+        font-style: normal;
+        margin-bottom: 0px;
     }
     .site-banner-white-text {
         display: grid;
@@ -93,6 +99,106 @@ $byui-blue: #056cb6;
         margin-left: 5px;
         text-decoration: none;
     }
+    //campus
+    .campus {
+        text-align: center;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        color: $med-gray;
+        margin-bottom: 15px;
+    }
+    h4 {
+        color: $link-blue;
+    }
+    td {
+        height: 35px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        display: block;
+        width: 100%;
+        color: $link-blue;
+        padding-left: 5px;
+        font-size: 18px;
+    }
+    .table-resource {
+        display: block;
+        margin-left: 5px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    table {
+        width: 100%;
+    }
+    th {
+        height: 45px;
+        background-color: $dark-gray;
+        color: white;
+        font-size: 22px;
+        font-family: 'BYUI Open Sans';
+        font-style: normal;
+        font-weight: 400;
+    }
+    tr:hover {
+        background-color: $light-gray;
+    }
+    select {
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: 18px;
+        background-color: $light-gray;
+        border-radius: 5px;
+        height: 45px;
+        width: 80%;
+    }
+    .tableDates {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        height: 40px;
+        width: 100%;
+        th {
+            background-color: $byui-blue;
+            font-size: 18px;
+            font-family: 'BYUI Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+        td {
+            height: 40px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+    }
+    //newsfeed section grids
+    .newfeed-grid {
+        margin-top: 35px;
+        display: grid;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        img {
+            display: none;
+        }
+    }
+    .classsec {
+        border-top: 1px solid rgb(212, 210, 210);
+        .text1 {
+            grid-column: 2/ span 2;
+            margin-top: 16px;
+        }
+    }
+    .teachersec {
+        border-top: 1px solid rgb(212, 210, 210);
+        .text2 {
+            margin-top: 16px;
+        }
+    }
+    .adsection {
+        border-top: 1px solid rgb(212, 210, 210);
+        .text3 {
+            margin-top: 16px;
+        }
+    }
 }
 
 @media only screen and (min-width:60rem) {
@@ -104,7 +210,7 @@ $byui-blue: #056cb6;
         font-family: 'BYUI Open Sans';
         font-style: normal;
         width: 1200px;
-        margin-left: 250px;
+        margin-left: 450px;
         margin-right: 250px;
         margin-top: 0;
     }
@@ -124,7 +230,7 @@ $byui-blue: #056cb6;
     }
     .site-banner__left {
         position: absolute;
-        width: 180px;
+        width: 280px;
         grid-column: 1;
     }
     .site-banner__right {
@@ -141,7 +247,7 @@ $byui-blue: #056cb6;
         font-size: 40px;
         text-align: center;
         padding-top: 15px;
-        margin-left: 250px;
+        margin-left: 450px;
         width: 100px;
         position: absolute;
     }
@@ -153,7 +259,7 @@ $byui-blue: #056cb6;
         font-style: normal;
         font-weight: 300;
         font-size: 30px;
-        padding-left: 250px;
+        padding-left: 450px;
         margin: 0px;
     }
     h3 {
@@ -165,6 +271,7 @@ $byui-blue: #056cb6;
     h4 {
         margin-top: 10px;
         margin-bottom: 2px;
+        color: $link-blue;
     }
     p {
         margin-top: 0px;
@@ -172,6 +279,7 @@ $byui-blue: #056cb6;
     img {
         margin-top: 30px;
     }
+    //grid for entire layout followed with nested grids
     .grid-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -214,8 +322,10 @@ $byui-blue: #056cb6;
     }
     //h4 for grid image text on images
     .campus {
-        color: $link-blue;
         text-align: center;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        color: $med-gray;
     }
     .campusvideo {
         grid-column: 1;
@@ -226,17 +336,19 @@ $byui-blue: #056cb6;
     .explorecampus {
         grid-column: 3;
     }
+    //newsfeed section grids
     .newfeed-grid {
         margin-top: 35px;
         grid-row: 3;
         grid-column: 1 / span 2;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        height: 200px;
         img {
+            display: block;
             margin-left: 5px;
             height: 150px;
             width: 90%;
+            padding-bottom: 8px;
         }
     }
     .devsect {
@@ -247,6 +359,7 @@ $byui-blue: #056cb6;
     }
     //section 3 newsfeed
     .classsec {
+        border-top: 1px solid rgb(212, 210, 210);
         grid-row: 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -256,6 +369,7 @@ $byui-blue: #056cb6;
         }
     }
     .teachersec {
+        border-top: 1px solid rgb(212, 210, 210);
         grid-row: 2;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -265,6 +379,7 @@ $byui-blue: #056cb6;
         }
     }
     .adsection {
+        border-top: 1px solid rgb(212, 210, 210);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         .text3 {
@@ -283,12 +398,12 @@ $byui-blue: #056cb6;
         clip: rect(0, 0, 0, 0);
         border: 0;
     }
+    //tables
     td {
         height: 35px;
         border: 1px solid black;
         border-collapse: collapse;
         display: block;
-        width: 320px;
         color: $link-blue;
         padding-left: 15px;
         font-size: 18px;
@@ -298,6 +413,7 @@ $byui-blue: #056cb6;
         grid-column: 3;
         margin-left: 50px;
         margin-top: 30px;
+        width: 320px;
     }
     th {
         height: 45px;
@@ -314,7 +430,6 @@ $byui-blue: #056cb6;
     .tableDates {
         margin-top: 35px;
         height: 55px;
-        width: 320px;
         th {
             background-color: $byui-blue;
             font-size: 22px;
@@ -325,7 +440,6 @@ $byui-blue: #056cb6;
         td {
             height: 50px;
             border-collapse: collapse;
-            width: 320px;
         }
     }
 }
